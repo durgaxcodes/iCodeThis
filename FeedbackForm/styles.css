@@ -1,0 +1,117 @@
+/* Add CSS here */ /* Add CSS here */
+/*Layout*/
+.bg-div {
+  background-color: #f7d897;
+  height: 550px;
+  width: 550px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: #f1d18a 0px 5px 15px;
+}
+.container {
+  background-color: #f5f5f5;
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  margin: -50px 0 0 -50px;
+  border-radius: 10px;
+  box-shadow: #f1d18a 0px 5px 15px;
+}
+.content {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/*Typography */
+
+h1 {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.pdesc {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.emojis {
+  display: flex;
+  justify-content: space-between;
+}
+.em {
+  text-align: center;
+  font-size: 25px;
+}
+.em-out:hover {
+  background-color: #fff1d3;
+  border: 1px solid #f1d18a;
+  border-radius: 5px;
+  box-shadow: #f1d18a 0px 5px 15px;
+}
+.em-out {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+.description {
+  text-align: center;
+  padding: 0;
+}
+
+/*Buttons */
+
+.label1,
+.label2,
+.label3 {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#text-area {
+  border: 1px solid #f1d18a;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  accent-color: #f1d18a;
+}
+a {
+  text-decoration: none;
+  color: #f1d18a;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  position: relative;
+  left: 230px;
+}
+.button1 {
+  background-color: #f1d18a;
+}
+.button2 {
+  background-color: none;
+  border: none;
+}
+.button1:hover {
+  background-color: #f1c564;
+}
+.button2:hover {
+  background-color: #f1c564;
+}
+#text-area:focus {
+  outline: none !important;
+  border: 1px solid #f1d18a;
+  box-shadow: 0 0 10px #f1c564;
+}
