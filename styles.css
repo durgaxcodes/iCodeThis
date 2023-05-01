@@ -1,0 +1,117 @@
+/* Add CSS here */
+/* Layout */
+.main-container {
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  position: relative;
+}
+.bg-div {
+  width: 50%;
+  height: 300px;
+  background-color: rgb(207, 250, 250);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+.container-div {
+  width: 47%;
+  height: 275px;
+  background-image: linear-gradient(to right, #657cd8, #1230a9);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+.content {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Typography */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  color: azure;
+  letter-spacing: 0.5px;
+  margin-top: -30px;
+}
+
+p {
+  font-size: 15px;
+  color: azure;
+  letter-spacing: 0.5px;
+}
+
+input[type="email"] {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: azure;
+  background-color: #778cdf;
+  border: none;
+}
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+}
+
+/* Button */
+
+button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 5px;
+  right: 9px;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(226, 222, 215);
+}
+button:active {
+  background-color: rgb(226, 222, 215);
+  box-shadow: 0 0.5px rgb(233, 226, 226);
+  transform: translateY(4px);
+}
+
+/*  IMG */
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: -90px;
+  bottom: -110px;
+}
+.img {
+  border-radius: 50%;
+  margin-right: 40px;
+  border: 5px solid azure;
+}
+
+img:hover {
+  transform: translateY(-10px);
+}
