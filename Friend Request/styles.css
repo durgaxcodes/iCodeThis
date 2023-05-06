@@ -39,6 +39,11 @@ body {
   margin-top: 2px;
 }
 
+#f-number {
+  margin-right: 10px;
+  color: #d35833;
+}
+
 .view {
   margin-top: 2px;
   font-size: 18px;
@@ -121,6 +126,16 @@ body {
 }
 
 .btn:active {
+  transform: translateY(3px);
+}
+
+.view:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-3px);
+}
+
+.view:active {
   transform: translateY(3px);
 }
 
