@@ -1,0 +1,125 @@
+/* Add CSS here */
+body {
+  box-sizing: border-box;
+  font-family: serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(99, 153, 233),
+    rgb(102, 65, 213)
+  );
+}
+
+.b-container {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: rgba(240, 248, 255, 0.283);
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+.content {
+  width: 90%;
+  height: 80%;
+  margin: 40px auto;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  margin-left: 5px;
+}
+
+.time-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.time {
+  margin-right: auto;
+}
+
+.a-time {
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.a-time:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(99, 153, 233),
+    rgb(102, 65, 213)
+  );
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-3px);
+  color: white;
+}
+
+.a-time:active {
+  transform: translateY(3px);
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-3px);
+}
+
+.button:active {
+  transform: translateY(3px);
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 600px;
+    height: 500px;
+  }
+  .b-container {
+    width: 600px;
+    height: 500px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .b-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .time-picker {
+    font-size: 15px;
+  }
+
+  .a-time {
+    padding: 5px 10px;
+  }
+}
