@@ -1,0 +1,236 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: white;
+}
+.container {
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.content {
+  width: 80%;
+  height: 70%;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide,
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+
+h3 {
+  font-size: 13px;
+  margin-left: 20px;
+}
+h4 {
+  font-size: 11px;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+.testimonial {
+  width: 40%;
+  height: 50%;
+  margin: 80px auto;
+}
+
+.img-container {
+  margin-right: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 600px;
+    height: 400px;
+  }
+
+  .content {
+    width: 80%;
+    height: 60%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+  .testimonial {
+    margin-top: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: auto;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .name {
+    margin-right: auto;
+  }
+  .dots {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 370px;
+    height: 320px;
+  }
+
+  .content {
+    width: 80%;
+    height: 60%;
+  }
+  h1 {
+    font-size: 17px;
+  }
+
+  h3 {
+    font-size: 10px;
+    margin-top: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+
+  h4 {
+    font-size: 11px;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .testimonial {
+    margin-top: 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .img-container {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .dots {
+    margin-top: 50px;
+  }
+}
