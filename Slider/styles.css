@@ -77,14 +77,33 @@ body {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.25s;
+  overflow-x: visible;
+}
+
+.fade2 {
+  animation-name: fade2;
+  animation-duration: 0.25s;
 }
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    transform: translateX(0);
+    opacity: 0.6;
   }
   to {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+
+@keyframes fade2 {
+  from {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(120%);
     opacity: 1;
   }
 }
