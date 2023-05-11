@@ -1,4 +1,5 @@
 let slideIndex = 1;
+var translateSlider = 0;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -25,6 +26,25 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+let next = document.getElementById("next");
+let prev = document.getElementById("prev");
+next.addEventListener("click", function () {
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.add("fade");
+    slides[i].classList.remove("fade2");
+  }
+});
+
+prev.addEventListener("click", function () {
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.add("fade2");
+    slides[i].classList.remove("fade");
+  }
+});
